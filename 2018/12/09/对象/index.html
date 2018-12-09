@@ -5,15 +5,19 @@
   
 
   
-  <title>xinxinxinrui</title>
+  <title>对象 | xinxinxinrui</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="xinxinxinrui">
-<meta property="og:url" content="http://yoursite.com/index.html">
+  <meta name="description" content="数据类型：    String    Number    Boolean    Undefined    Null    -以上五种类型属于基本数据类型，以后我们看到的只要不是上边的5种，全是对象    Object 对象 基本数据类型都是单一的值“hello” 123 true，值和值之间没有任何关系 在js中表示一个人的信息（name，gender，age）    Var name=“孙悟空”">
+<meta property="og:type" content="article">
+<meta property="og:title" content="对象">
+<meta property="og:url" content="http://yoursite.com/2018/12/09/对象/index.html">
 <meta property="og:site_name" content="xinxinxinrui">
+<meta property="og:description" content="数据类型：    String    Number    Boolean    Undefined    Null    -以上五种类型属于基本数据类型，以后我们看到的只要不是上边的5种，全是对象    Object 对象 基本数据类型都是单一的值“hello” 123 true，值和值之间没有任何关系 在js中表示一个人的信息（name，gender，age）    Var name=“孙悟空”">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2018-12-09T05:12:11.536Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="xinxinxinrui">
+<meta name="twitter:title" content="对象">
+<meta name="twitter:description" content="数据类型：    String    Number    Boolean    Undefined    Null    -以上五种类型属于基本数据类型，以后我们看到的只要不是上边的5种，全是对象    Object 对象 基本数据类型都是单一的值“hello” 123 true，值和值之间没有任何关系 在js中表示一个人的信息（name，gender，age）    Var name=“孙悟空”">
   
     <link rel="alternate" href="/atom.xml" title="xinxinxinrui" type="application/atom+xml">
   
@@ -64,9 +68,7 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-  
-    <article id="w-对象" class="article article-type-w" itemscope="" itemprop="blogPost">
+        <section id="main"><article id="w-对象" class="article article-type-w" itemscope="" itemprop="blogPost">
   <div class="article-meta">
     <a href="/2018/12/09/对象/" class="article-date">
   <time datetime="2018-12-09T05:11:16.000Z" itemprop="datePublished">2018-12-09</time>
@@ -79,8 +81,8 @@
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/12/09/对象/">对象</a>
+    <h1 class="article-title" itemprop="name">
+      对象
     </h1>
   
 
@@ -105,49 +107,19 @@
     </footer>
   </div>
   
-</article>
-
-
+    
+<nav id="article-nav">
   
-    <article id="w-函数表达式" class="article article-type-w" itemscope="" itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2018/11/25/函数表达式/" class="article-date">
-  <time datetime="2018-11-25T15:07:16.000Z" itemprop="datePublished">2018-11-25</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/11/25/函数表达式/">函数表达式</a>
-    </h1>
+    <a href="/2018/11/25/函数表达式/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">函数表达式</div>
+    </a>
   
+</nav>
 
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>函数名是指针，函数是对象<br>函数表达式<br>函数声明：函数声明提升，代码之前会先读取函数声明<br>1).以函数声明的方法定义的函数,函数名是必须的,而函数表达式的函数名是可选的.<br>2).以函数声明的方法定义的函数,函数可以在函数声明之前调用,而函数表达式的函数只能在声明之后调用.<br>3).以函数声明的方法定义的函数并不是真正的声明,它们仅仅可以出现在全局中,或者嵌套在其他的函数中,但是它们不能出现在循环,条件或者try/catch/finally中,而函数表达式可以在任何地方声明.<br>递归<br>arguments 的主要用途是保存函数参数， 但这个对象还有一个名叫 callee 的属性，该属性是一个指针，指向拥有这个 arguments 对象的函数。<br>function factorial(num){<br>   if (num &lt;=1) {<br>      return 1;<br>   } else {<br>   return num <em> factorial(num-1)<br>   }<br>}<br>这个函数的执行与函数名 factorial 紧紧耦合在了一起。为 了消除这种紧密耦合的现象，可以像下面这样使用 arguments.callee<br>在这个重写后的 factorial()函数的函数体内，没有再引用函数名 factorial。这样，无论引用函数时使用的是什么名字，都可以保证正常完成递归调用。<br>function factorial(num){<br>            if(num &lt;= 1){<br>                return 1;<br>            }else{<br>                return num </em> arguments.callee(num-1);<br>            }<br>        }<br>        var trueFactorial = factorial;<br>        alert(trueFactorial(5));    //120<br>        factorial = function() {<br>            return 0;<br>        }<br>        alert(trueFactorial(5));// 120 如果没有使用arguments.callee，将返回0<br>访问 arguments 是个很昂贵的操作，因为它是个很大的对象，每次递归调用时都需要重新创建。影响现代浏览器的性能，还会影响闭包。<br>现在arguments.callee 被弃用了。怎么办，其实很简单，给内部函数一个名字即可（当函数被调用时，它的arguments.callee对象就会指向自身，也就是一个对自己的引用。）<br>闭包<br>闭包就是能够读取其他函数内部变量的函数。例如在javascript中，只有函数内部的子函数才能读取局部变量，所以闭包可以理解成“定义在一个函数内部的函数“。在本质上，闭包是将函数内部和函数外部连接起来的桥梁。<br>有权访问另一个函数作用域内变量的函数都是闭包。<br>闭包就是一个函数引用另外一个函数的变量，因为变量被引用着所以不会被回收，因此可以用来封装一个私有变量。这是优点也是缺点，不必要的闭包只会徒增内存消耗！<br>作用域链的机制导致了一个问题，在循环里的匿名函数取得的任何变量都是最后一个值<br>function box(){<br>    var arr = [];<br>    for(var i=0;i&lt;5;i++){<br>        arr[i]=function(){<br>            return i;<br>        }<br>    }<br>    //循环已经执行完毕了，i最终为4++即5<br>    return arr;<br>}<br>var b=box();<br>for(var i=0;i&lt;b.length;i++){<br>    alert(b<a href="">i</a>);<br>}<br>//5 5 5 5 5<br>//解决方法，单纯得到0 1 2 3 4  —-&gt;无需使用匿名函数<br>function box(){<br>    var arr = [];<br>    for(var i=0;i&lt;5;i++){<br>        arr[i]=i;<br>    }<br>    return arr;<br>}<br>for(var i=0;i&lt;5;i++){<br>    alert(box()[i]);<br>}</p>
-<p>//通过匿名函数及时自我执行<br>function box() {<br>var arr = [];<br>    for(var i = 0; i &lt; 5; i++) {<br>        arr[i] = (function(num) {<br>            return num;<br>        })(i);<br>    }<br>    return arr;<br>}<br>var b = box();<br>for(var i = 0; i &lt; b.length; i++) {<br>    alert(b[i]);<br>}<br>//通过闭包可以将变量驻留内存中<br>function box() {<br>var arr = [];<br>    for(var i = 0; i &lt; 5; i++) {<br>        arr[i] = (function(num) {<br>            return function(){<br>                return num;<br>            };<br>        })(i);<br>    }<br>    return arr;<br>}<br>var b = box();<br>for(var i = 0; i &lt; b.length; i++) {<br>    alert(b[i]);<br>}</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/11/25/函数表达式/" data-id="cjox0q52u0000o4vaq0aewmm4" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
   
 </article>
-
-
-  
-
 
 </section>
         

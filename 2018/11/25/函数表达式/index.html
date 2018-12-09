@@ -5,15 +5,19 @@
   
 
   
-  <title>xinxinxinrui</title>
+  <title>函数表达式 | xinxinxinrui</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="xinxinxinrui">
-<meta property="og:url" content="http://yoursite.com/index.html">
+  <meta name="description" content="函数名是指针，函数是对象函数表达式函数声明：函数声明提升，代码之前会先读取函数声明1).以函数声明的方法定义的函数,函数名是必须的,而函数表达式的函数名是可选的.2).以函数声明的方法定义的函数,函数可以在函数声明之前调用,而函数表达式的函数只能在声明之后调用.3).以函数声明的方法定义的函数并不是真正的声明,它们仅仅可以出现在全局中,或者嵌套在其他的函数中,但是它们不能出现在循环,条件或者try">
+<meta property="og:type" content="article">
+<meta property="og:title" content="函数表达式">
+<meta property="og:url" content="http://yoursite.com/2018/11/25/函数表达式/index.html">
 <meta property="og:site_name" content="xinxinxinrui">
+<meta property="og:description" content="函数名是指针，函数是对象函数表达式函数声明：函数声明提升，代码之前会先读取函数声明1).以函数声明的方法定义的函数,函数名是必须的,而函数表达式的函数名是可选的.2).以函数声明的方法定义的函数,函数可以在函数声明之前调用,而函数表达式的函数只能在声明之后调用.3).以函数声明的方法定义的函数并不是真正的声明,它们仅仅可以出现在全局中,或者嵌套在其他的函数中,但是它们不能出现在循环,条件或者try">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2018-11-25T15:08:01.619Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="xinxinxinrui">
+<meta name="twitter:title" content="函数表达式">
+<meta name="twitter:description" content="函数名是指针，函数是对象函数表达式函数声明：函数声明提升，代码之前会先读取函数声明1).以函数声明的方法定义的函数,函数名是必须的,而函数表达式的函数名是可选的.2).以函数声明的方法定义的函数,函数可以在函数声明之前调用,而函数表达式的函数只能在声明之后调用.3).以函数声明的方法定义的函数并不是真正的声明,它们仅仅可以出现在全局中,或者嵌套在其他的函数中,但是它们不能出现在循环,条件或者try">
   
     <link rel="alternate" href="/atom.xml" title="xinxinxinrui" type="application/atom+xml">
   
@@ -64,52 +68,7 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-  
-    <article id="w-对象" class="article article-type-w" itemscope="" itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2018/12/09/对象/" class="article-date">
-  <time datetime="2018-12-09T05:11:16.000Z" itemprop="datePublished">2018-12-09</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/12/09/对象/">对象</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>数据类型：<br>    String<br>    Number<br>    Boolean<br>    Undefined<br>    Null<br>    -以上五种类型属于基本数据类型，以后我们看到的只要不是上边的5种，全是对象<br>    Object 对象</p>
-<p>基本数据类型都是单一的值“hello” 123 true，值和值之间没有任何关系</p>
-<p>在js中表示一个人的信息（name，gender，age）<br>    Var name=“孙悟空”；<br>    Var gender=“男；<br>    Var age=18；<br>如果使用基本数据类型，我们所创建的值都是独立的，甭能成为一个整体。<br>对象属于一种复合的数据类型，在对象中可以保存多个不同数据类型的属性。<br>对象的分类：<br>1.内建对象<br>-由JS标准中定义的对象，在任何ES的的实现中都可以使用<br>-比如，math，string，number，boolean，function，object……<br>        2.宿主对象<br>                -由JS的运行环境提供的对象，目前来讲主要由浏览器提供的对象<br>                -比如BOM，DOM<br>        3.自定义对象<br>                -由开发人员自己创建的对象</p>
-<p>创建对象：<br>var obj=new object()<br>使用new关键字调用的函数，是构造函数constructor<br>构造函数时专门用来创建对象的函数<br>使用typeof检查一个对象时，会返回object   //console.log(obj);</p>
-<p>在对象中保存的值称为属性<br>向对象中添加属性，语法：对象.属性名=属性值；<br>    obj.name=”孙悟空”；<br>    obj.gender=”男”;<br>    obj.age=18;<br>读取对象中的属性，语法：对象.属性名     //console,log(obj.name);<br>    如果读取对象中没有属性，不会报错会返回undefined<br>修改对象中的属性值，语法：对象.属性名=新值；<br>删除对象中的属性，语法：delete 对象.属性名；    //delete obj.name;<br>属性名：<br>    -对象的属性名不强制要求遵循标识符的规范，什么乱七八糟的名字都可以使用<br>    -但是使用时还是尽量按照标识符的规范去做<br>    -如果使用特殊的属性名，要使用语法：对象[“属性名”]=属性值; 读取时也采用这个<br>属性值：<br>    -JS对象的属性值，可以是任意的数据类型，也可以是一个对象<br>In 运算符：<br>    -通过该运算符可以检查一个对象中是否含有指定的属性；<br>        如果有则返回true，如果没有则返回false；<br>    -语法：”属性名” in 对象</p>
-<p>基本数据类型和引用数据类型：<br>    基本数据类型：String，Number，Boolean，Undefined，Null；<br>    引用数据类型：Object<br>    -JS中的变量都是保存在栈内存中<br>        基本数据类型直接在栈内存中存储<br>        值与值之间独立存在，修改一个变量不会影响其他变量</p>
-<pre><code>引用数据类型是保存在堆内存中，每创建一个新的对象，就会在堆内存中开辟出一个新的空间，而变量保存的是对象的内存地址（对象的引用），如果两个变量保存的是同一个对象的引用，当一个通过一个变量修改属性时，另一个也会受到影响
-</code></pre>
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/12/09/对象/" data-id="cjpgfmt170000b4va32fon6zd" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="w-函数表达式" class="article article-type-w" itemscope="" itemprop="blogPost">
+        <section id="main"><article id="w-函数表达式" class="article article-type-w" itemscope="" itemprop="blogPost">
   <div class="article-meta">
     <a href="/2018/11/25/函数表达式/" class="article-date">
   <time datetime="2018-11-25T15:07:16.000Z" itemprop="datePublished">2018-11-25</time>
@@ -122,8 +81,8 @@
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/11/25/函数表达式/">函数表达式</a>
+    <h1 class="article-title" itemprop="name">
+      函数表达式
     </h1>
   
 
@@ -143,11 +102,23 @@
     </footer>
   </div>
   
-</article>
-
+    
+<nav id="article-nav">
+  
+    <a href="/2018/12/09/对象/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          对象
+        
+      </div>
+    </a>
+  
+  
+</nav>
 
   
-
+</article>
 
 </section>
         
